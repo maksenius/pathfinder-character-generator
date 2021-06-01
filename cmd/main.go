@@ -1,8 +1,8 @@
 package main
 
 import (
-	"pathfinderCharacter/internal/service/characteristic"
-	"pathfinderCharacter/internal/service/generator"
+	"pathfinderCharacterGenerator/internal/service/characteristic"
+	"pathfinderCharacterGenerator/internal/service/generator"
 )
 
 func main() {

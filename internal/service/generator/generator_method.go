@@ -2,7 +2,7 @@ package generator
 
 import (
 	"fmt"
-	"pathfinderCharacter/internal/helper"
+	"pathfinderCharacterGenerator/internal/helper"
 	"sort"
 )
 
