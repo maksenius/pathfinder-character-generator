@@ -13,5 +13,3 @@ const (
 	ClassicGeneratorMethod  string = "classic"
 	HeroicGeneratorMethod   string = "heroic"
 )
-
-const ()

@@ -2,8 +2,9 @@ package generator
 
 import (
 	"fmt"
-	"pathfinderCharacterGenerator/internal/helper"
 	"sort"
+
+	"pathfinderCharacterGenerator/internal/helper"
 )
 
 type CharacteristicDiceGenerator struct {

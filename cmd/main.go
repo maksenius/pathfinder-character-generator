@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"pathfinderCharacterGenerator/internal/service/characteristic"
 	"pathfinderCharacterGenerator/internal/service/generator"
 )
@@ -8,5 +10,5 @@ import (
 func main() {
 	characteristicDiceGenerator := generator.NewCharacteristicDiceGenerator("heroic")
 	characteristicService := characteristic.NewService(characteristicDiceGenerator)
-	characteristicService.SetCharacteristic()
+	fmt.Println(characteristicService)
 }

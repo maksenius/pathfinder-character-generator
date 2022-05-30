@@ -1,19 +1,27 @@
 package characteristic
 
-import "fmt"
+import (
+	"pathfinderCharacterGenerator/internal/model"
+)
+
+type Service struct {
+	diceCharacteristicGenerator DiceCharacteristicGenerator
+	classesCharacteristicSetup  ClassesCharacteristicSetup
+}
 
 type DiceCharacteristicGenerator interface {
 	GetNumbers() []int
 }
 
-type Service struct {
-	diceCharacteristicGenerator DiceCharacteristicGenerator
+type ClassesCharacteristicSetup interface {
+	SetPriorityCharacteristic([]int) *model.Characteristic
 }
 
 func NewService(diceCharacteristicGenerator DiceCharacteristicGenerator) *Service {
 	return &Service{diceCharacteristicGenerator: diceCharacteristicGenerator}
 }
 
-func (s *Service) SetCharacteristic() {
-	fmt.Println(s.diceCharacteristicGenerator.GetNumbers())
+func (s *Service) GetCharacteristic() *model.Characteristic {
+	numbers := s.diceCharacteristicGenerator.GetNumbers()
+	return s.classesCharacteristicSetup.SetPriorityCharacteristic(numbers)
 }
