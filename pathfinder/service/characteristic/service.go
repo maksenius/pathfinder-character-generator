@@ -1,7 +1,7 @@
 package characteristic
 
 import (
-	"pathfinderCharacterGenerator/internal/model"
+	"pathfinderCharacterGenerator/pathfinder/model"
 )
 
 type Service struct {
